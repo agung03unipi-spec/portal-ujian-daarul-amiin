@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Ujian - IT Daarul Amiin IBS</title>
+    <meta name="description" content="Portal Ujian Online SMP SMA IT Daarul Amiin IBS">
+    <meta name="theme-color" content="#2563eb">
+    <link rel="manifest" href="data:application/json;base64,ewogICJuYW1lIjogIlBvcnRhbCBVamlhbiAtIElUIERhYXJ1bCBBbWlpbiBJQlMiLAogICJzaG9ydF9uYW1lIjogIlBvcnRhbCBVamlhbiIsCiAgImRlc2NyaXB0aW9uIjogIlBvcnRhbCBVamlhbiBPbmxpbmUgU01QIFNNQSBJVCBEYWFydWwgQW1paW4gSUJTIiwKICAic3RhcnRfdXJsIjogIi8iLAogICJkaXNwbGF5IjogInN0YW5kYWxvbmUiLAogICJiYWNrZ3JvdW5kX2NvbG9yIjogIiNmZmZmZmYiLAogICJ0aGVtZV9jb2xvciI6ICIjMjU2M2ViIiwKICAiaWNvbnMiOiBbCiAgICB7CiAgICAgICJzcmMiOiAiZGF0YTppbWFnZS9zdmcreG1sO2Jhc2U2NCxQSE4yWnlCM2FXUjBhRDBpTVRJNElpQm9aV2xuYUhROUlqRXlPQ0lnZG1sbGQwSnZlRDBpTUNBd0lERXlPQ0F4TWpnaUlIaHRiRzV6UFNKb2RIUndPaTh2ZDNkM0xuY3pMbTl5Wnk4eU1EQXdMM04yWnlJK1BISmxZM1FnZUQwaU1UQWlJSGs5SWpFd0lpQjNhV1IwYUQwaU1UQTRJaUJvWldsbmFIUTlJakV3T0NJZ2NuZzlJalFpSUdacGJHdzlJaU15TlRZelpXSWlMejQ4ZEdWNGRDQjRQU0kyTkNJZ2VUMGlOalFpSUdacGJHdzlJaU0zWm1abVptWWlJR1p2Ym5RdGMybDZaVDBpTkRnaUlIUmxlSFF0WVc1amFHOXlQU0p0YVdSa2JHVWlQanh1Y21WaGEzTWdMejQ4TDNSbGVIUStQQzl6ZG1jKyIsCiAgICAgICJzaXplcyI6ICIxMjh4MTI4IiwKICAgICAgInR5cGUiOiAiaW1hZ2Uvc3ZnK3htbCIKICAgIH0sCiAgICB7CiAgICAgICJzcmMiOiAiZGF0YTppbWFnZS9zdmcreG1sO2Jhc2U2NCxQSE4yWnlCM2FXUjBhRDBpTlRFeUlpQm9aV2xuYUhROUlqVXhNaUlnZG1sbGQwSnZlRDBpTUNBd0lEVXhNaUExTVRJaUlIaHRiRzV6UFNKb2RIUndPaTh2ZDNkM0xuY3pMbTl5Wnk4eU1EQXdMM04yWnlJK1BISmxZM1FnZUQwaU5EQWlJSGs5SWpRd0lpQjNhV1IwYUQwaU5ETXlJaUJvWldsbmFIUTlJalF6TWlJZ2NuZzlJakU0SWlCbWFXeHNQU0lqTWpVMk0yVmlJaTgrUEhSbGVIUWdlRDBpTWpVMklpQjVQU0l5TlRZaUlHWnBiR3c5SWlNM1ptWm1abVlpSUdadmJuUXRjMmw2WlQwaU9UWWlJSFJsZUhRdFlXNWphRzl5UFNKdGFXUmtiR1VpUGp4dWNtVmhhM01nTHo0OEwzUmxlSFErUEM5emRtYysiLAogICAgICAic2l6ZXMiOiAiNTEyeDUxMiIsCiAgICAgICJ0eXBlIjogImltYWdlL3N2Zyt4bWwiCiAgICB9CiAgXSwKICAib3JpZW50YXRpb24iOiAicG9ydHJhaXQiLAogICJjYXRlZ29yaWVzIjogWyJlZHVjYXRpb24iXQp9">
+    <link rel="apple-touch-icon" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTI4IiBoZWlnaHQ9IjEyOCIgdmlld0JveD0iMCAwIDEyOCAxMjgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3QgeD0iMTAiIHk9IjEwIiB3aWR0aD0iMTA4IiBoZWlnaHQ9IjEwOCIgcng9IjQiIGZpbGw9IiMyNTYzZWIiLz48dGV4dCB4PSI2NCIgeT0iNjQiIGZpbGw9IiM3ZmZmZmYiIGZvbnQtc2l6ZT0iNDgiIHRleHQtYW5jaG9yPSJtaWRkbGUiPjxucmVha3MgLz48L3RleHQ+PC9zdmc+">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            box-sizing: border-box;
+        }
+        .fade-in {
+            animation: fadeIn 0.5s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
+    <!-- Header -->
+    <header class="bg-white shadow-lg">
+        <div class="max-w-6xl mx-auto px-4 py-6">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-4">
+                    <div class="w-12 h-12 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold text-xl">📚</span>
+                    </div>
+                    <div>
+                        <h1 class="text-2xl font-bold text-gray-800">Portal Ujian Online</h1>
+                        <p class="text-sm text-gray-600">SMP SMA IT Daarul Amiin IBS</p>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <button id="installBtn" class="hidden px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors flex items-center space-x-2">
+                        <span>📱</span>
+                        <span>Install App</span>
+                    </button>
+                    <div id="userInfo" class="hidden">
+                        <div class="text-right">
+                            <p class="font-semibold text-gray-800" id="userName"></p>
+                            <p class="text-sm text-gray-600" id="userClass"></p>
+                        </div>
+                        <button onclick="logout()" class="ml-4 px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 transition-colors">
+                            Logout
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 py-8">
+        <!-- Login Form -->
+        <div id="loginSection" class="fade-in">
+            <div class="max-w-md mx-auto bg-white rounded-xl shadow-lg p-8">
+                <div class="text-center mb-8">
+                    <div class="w-20 h-20 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-white text-3xl">🎓</span>
+                    </div>
+                    <h2 class="text-2xl font-bold text-gray-800 mb-2">Selamat Datang</h2>
+                    <p class="text-gray-600">Silakan login untuk mengakses ujian</p>
+                    
+                    <div id="installPrompt" class="hidden mt-4 p-4 bg-blue-50 border border-blue-200 rounded-lg">
+                        <div class="flex items-center justify-center space-x-2 text-blue-800">
+                            <span>📱</span>
+                            <span class="text-sm font-medium">Install aplikasi ini di HP untuk akses lebih mudah!</span>
+                        </div>
+                        <button onclick="installApp()" class="mt-2 px-4 py-2 bg-blue-600 text-white text-sm rounded-lg hover:bg-blue-700 transition-colors">
+                            Install Sekarang
+                        </button>
+                    </div>
+                </div>
+                
+                <form onsubmit="login(event)" class="space-y-6">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Nama Lengkap</label>
+                        <input type="text" id="studentName" required 
+                               class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                               placeholder="Masukkan nama lengkap">
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Jenjang</label>
+                        <select id="studentLevel" required onchange="updateClassOptions()"
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                            <option value="">Pilih Jenjang</option>
+                            <option value="SMP">🏫 SMP (Sekolah Menengah Pertama)</option>
+                            <option value="SMA">🎓 SMA (Sekolah Menengah Atas)</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Kelas</label>
+                        <select id="studentClass" required 
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                            <option value="">Pilih jenjang terlebih dahulu</option>
+                        </select>
+                    </div>
+                    
+                    <button type="submit" 
+                            class="w-full bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-3 rounded-lg font-semibold hover:from-blue-700 hover:to-indigo-700 transition-all duration-300 transform hover:scale-105">
+                        Masuk ke Portal Ujian
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Date Selection -->
+        <div id="dateSection" class="hidden fade-in">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-bold text-gray-800 mb-2">Pilih Tanggal Ujian</h2>
+                <p class="text-gray-600" id="levelInfo"></p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white rounded-xl shadow-lg p-6 card-hover cursor-pointer" onclick="selectDate('2024-01-15', 'Senin')">
+                    <div class="text-center">
+                        <div class="text-4xl mb-4">📅</div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">15 Januari 2024</h3>
+                        <p class="text-gray-600 font-medium">Senin</p>
+                        <div class="mt-4 px-4 py-2 bg-blue-100 text-blue-800 rounded-lg text-sm" id="date1Count">
+                            Mata Pelajaran Tersedia
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg p-6 card-hover cursor-pointer" onclick="selectDate('2024-01-16', 'Selasa')">
+                    <div class="text-center">
+                        <div class="text-4xl mb-4">📅</div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">16 Januari 2024</h3>
+                        <p class="text-gray-600 font-medium">Selasa</p>
+                        <div class="mt-4 px-4 py-2 bg-green-100 text-green-800 rounded-lg text-sm" id="date2Count">
+                            Mata Pelajaran Tersedia
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg p-6 card-hover cursor-pointer" onclick="selectDate('2024-01-17', 'Rabu')">
+                    <div class="text-center">
+                        <div class="text-4xl mb-4">📅</div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">17 Januari 2024</h3>
+                        <p class="text-gray-600 font-medium">Rabu</p>
+                        <div class="mt-4 px-4 py-2 bg-purple-100 text-purple-800 rounded-lg text-sm" id="date3Count">
+                            Mata Pelajaran Tersedia
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-8">
+                <button onclick="backToLogin()" class="px-6 py-3 bg-gray-500 text-white rounded-lg hover:bg-gray-600 transition-colors">
+                    Kembali
+                </button>
+            </div>
+        </div>
+
+        <!-- Subject Selection -->
+        <div id="subjectSection" class="hidden fade-in">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-bold text-gray-800 mb-2">Mata Pelajaran</h2>
+                <p class="text-gray-600" id="selectedDateInfo"></p>
+            </div>
+            
+            <div id="subjectList" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Subjects will be populated by JavaScript -->
+            </div>
+            
+            <div class="text-center mt-8">
+                <button onclick="backToDate()" class="px-6 py-3 bg-gray-500 text-white rounded-lg hover:bg-gray-600 transition-colors">
+                    Kembali ke Tanggal
+                </button>
+            </div>
+        </div>
+
+        <!-- Exam Link -->
+        <div id="examSection" class="hidden fade-in">
+            <div class="max-w-2xl mx-auto bg-white rounded-xl shadow-lg p-8">
+                <div class="text-center mb-8">
+                    <div class="w-20 h-20 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-white text-3xl">📝</span>
+                    </div>
+                    <h2 class="text-2xl font-bold text-gray-800 mb-2" id="examTitle"></h2>
+                    <p class="text-gray-600" id="examInfo"></p>
+                </div>
+                
+                <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-6">
+                    <div class="flex">
+                        <div class="text-yellow-400 text-xl mr-3">⚠️</div>
+                        <div>
+                            <h3 class="text-sm font-medium text-yellow-800">Petunjuk Ujian:</h3>
+                            <ul class="mt-2 text-sm text-yellow-700 list-disc list-inside space-y-1">
+                                <li>Pastikan koneksi internet stabil</li>
+                                <li>Kerjakan dengan jujur dan mandiri</li>
+                                <li>Setelah selesai, kembali ke portal untuk logout</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center space-y-4">
+                    <button onclick="openExam()" 
+                            class="w-full bg-gradient-to-r from-green-600 to-emerald-600 text-white py-4 rounded-lg font-semibold text-lg hover:from-green-700 hover:to-emerald-700 transition-all duration-300 transform hover:scale-105">
+                        🚀 Mulai Ujian
+                    </button>
+                    
+                    <button onclick="backToSubjects()" 
+                            class="w-full px-6 py-3 bg-gray-500 text-white rounded-lg hover:bg-gray-600 transition-colors">
+                        Kembali ke Mata Pelajaran
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // Data ujian berdasarkan jenjang (dalam implementasi nyata, ini akan dari database)
+        const examData = {
+            'SMP': {
+                '2024-01-15': {
+                    'Matematika': 'https://forms.gle/smp-math1',
+                    'Bahasa Indonesia': 'https://forms.gle/smp-indo1',
+                    'IPA': 'https://forms.gle/smp-ipa1'
+                },
+                '2024-01-16': {
+                    'Bahasa Inggris': 'https://forms.gle/smp-eng1',
+                    'IPS': 'https://forms.gle/smp-ips1',
+                    'PKN': 'https://forms.gle/smp-pkn1',
+                    'Agama': 'https://forms.gle/smp-agama1'
+                },
+                '2024-01-17': {
+                    'Seni Budaya': 'https://forms.gle/smp-seni1',
+                    'Olahraga': 'https://forms.gle/smp-or1'
+                }
+            },
+            'SMA': {
+                '2024-01-15': {
+                    'Matematika': 'https://forms.gle/sma-math1',
+                    'Bahasa Indonesia': 'https://forms.gle/sma-indo1',
+                    'Fisika': 'https://forms.gle/sma-fisika1',
+                    'Kimia': 'https://forms.gle/sma-kimia1'
+                },
+                '2024-01-16': {
+                    'Bahasa Inggris': 'https://forms.gle/sma-eng1',
+                    'Biologi': 'https://forms.gle/sma-bio1',
+                    'Sejarah': 'https://forms.gle/sma-sejarah1',
+                    'Geografi': 'https://forms.gle/sma-geo1',
+                    'Ekonomi': 'https://forms.gle/sma-ekonomi1'
+                },
+                '2024-01-17': {
+                    'Sosiologi': 'https://forms.gle/sma-sosio1',
+                    'Seni Budaya': 'https://forms.gle/sma-seni1'
+                }
+            }
+        };
+
+        let currentUser = null;
+        let selectedDate = null;
+        let selectedDay = null;
+        let selectedSubject = null;
+        let deferredPrompt = null;
+
+        // Function to update class options based on selected level
+        function updateClassOptions() {
+            const level = document.getElementById('studentLevel').value;
+            const classSelect = document.getElementById('studentClass');
+            
+            classSelect.innerHTML = '<option value="">Pilih Kelas</option>';
+            
+            if (level === 'SMP') {
+                const smpClasses = ['7A', '7B', '7C', '8A', '8B', '8C', '9A', '9B', '9C'];
+                smpClasses.forEach(cls => {
+                    const option = document.createElement('option');
+                    option.value = cls;
+                    option.textContent = cls;
+                    classSelect.appendChild(option);
+                });
+            } else if (level === 'SMA') {
+                const smaClasses = ['10 IPA', '10 IPS', '11 IPA', '11 IPS', '12 IPA', '12 IPS'];
+                smaClasses.forEach(cls => {
+                    const option = document.createElement('option');
+                    option.value = cls;
+                    option.textContent = cls;
+                    classSelect.appendChild(option);
+                });
+            }
+        }
+
+        // PWA Install functionality
+        window.addEventListener('beforeinstallprompt', (e) => {
+            e.preventDefault();
+            deferredPrompt = e;
+            
+            // Show install button in header
+            document.getElementById('installBtn').classList.remove('hidden');
+            
+            // Show install prompt in login section
+            document.getElementById('installPrompt').classList.remove('hidden');
+        });
+
+        // Handle install button click
+        document.getElementById('installBtn').addEventListener('click', installApp);
+
+        function installApp() {
+            if (deferredPrompt) {
+                deferredPrompt.prompt();
+                deferredPrompt.userChoice.then((choiceResult) => {
+                    if (choiceResult.outcome === 'accepted') {
+                        console.log('User accepted the install prompt');
+                        // Hide install elements
+                        document.getElementById('installBtn').classList.add('hidden');
+                        document.getElementById('installPrompt').classList.add('hidden');
+                    }
+                    deferredPrompt = null;
+                });
+            } else {
+                // Fallback for browsers that don't support PWA install
+                alert('Untuk menginstall aplikasi ini:\n\n1. Di Chrome Android: Tap menu (⋮) > "Add to Home screen"\n2. Di Safari iOS: Tap Share (⬆️) > "Add to Home Screen"\n3. Di browser lain: Cari opsi "Install" atau "Add to Home Screen"');
+            }
+        }
+
+        // Register service worker for offline functionality
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                const swCode = `
+                    const CACHE_NAME = 'portal-ujian-v1';
+                    const urlsToCache = ['/'];
+                    
+                    self.addEventListener('install', (event) => {
+                        event.waitUntil(
+                            caches.open(CACHE_NAME)
+                                .then((cache) => cache.addAll(urlsToCache))
+                        );
+                    });
+                    
+                    self.addEventListener('fetch', (event) => {
+                        event.respondWith(
+                            caches.match(event.request)
+                                .then((response) => {
+                                    return response || fetch(event.request);
+                                })
+                        );
+                    });
+                `;
+                
+                const blob = new Blob([swCode], { type: 'application/javascript' });
+                const swUrl = URL.createObjectURL(blob);
+                
+                navigator.serviceWorker.register(swUrl)
+                    .then((registration) => {
+                        console.log('SW registered: ', registration);
+                    })
+                    .catch((registrationError) => {
+                        console.log('SW registration failed: ', registrationError);
+                    });
+            });
+        }
+
+        function login(event) {
+            event.preventDefault();
+            
+            const name = document.getElementById('studentName').value;
+            const level = document.getElementById('studentLevel').value;
+            const studentClass = document.getElementById('studentClass').value;
+            
+            currentUser = { name, level, class: studentClass };
+            
+            // Update header
+            document.getElementById('userName').textContent = name;
+            document.getElementById('userClass').textContent = `${level} - Kelas ${studentClass}`;
+            document.getElementById('userInfo').classList.remove('hidden');
+            
+            // Update level info and subject counts
+            document.getElementById('levelInfo').textContent = `Jadwal ujian untuk ${level} - Kelas ${studentClass}`;
+            updateSubjectCounts();
+            
+            // Show date selection
+            document.getElementById('loginSection').classList.add('hidden');
+            document.getElementById('dateSection').classList.remove('hidden');
+        }
+
+        function updateSubjectCounts() {
+            const level = currentUser.level;
+            const dates = ['2024-01-15', '2024-01-16', '2024-01-17'];
+            const countElements = ['date1Count', 'date2Count', 'date3Count'];
+            
+            dates.forEach((date, index) => {
+                const subjects = examData[level][date] || {};
+                const count = Object.keys(subjects).length;
+                document.getElementById(countElements[index]).textContent = `${count} Mata Pelajaran`;
+            });
+        }
+
+        function selectDate(date, day) {
+            selectedDate = date;
+            selectedDay = day;
+            
+            document.getElementById('selectedDateInfo').textContent = `${currentUser.level} - ${day}, ${date}`;
+            
+            // Populate subjects based on level
+            const subjects = examData[currentUser.level][date] || {};
+            const subjectList = document.getElementById('subjectList');
+            subjectList.innerHTML = '';
+            
+            Object.keys(subjects).forEach(subject => {
+                const subjectCard = document.createElement('div');
+                subjectCard.className = 'bg-white rounded-xl shadow-lg p-6 card-hover cursor-pointer';
+                subjectCard.onclick = () => selectSubject(subject);
+                
+                // Different icons for different subjects
+                const subjectIcons = {
+                    'Matematika': '🔢',
+                    'Bahasa Indonesia': '📝',
+                    'Bahasa Inggris': '🇬🇧',
+                    'IPA': '🔬',
+                    'IPS': '🌍',
+                    'PKN': '🏛️',
+                    'Agama': '🕌',
+                    'Seni Budaya': '🎨',
+                    'Olahraga': '⚽',
+                    'Fisika': '⚛️',
+                    'Kimia': '🧪',
+                    'Biologi': '🧬',
+                    'Sejarah': '📚',
+                    'Geografi': '🗺️',
+                    'Ekonomi': '💰',
+                    'Sosiologi': '👥'
+                };
+                
+                subjectCard.innerHTML = `
+                    <div class="text-center">
+                        <div class="text-4xl mb-4">${subjectIcons[subject] || '📖'}</div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">${subject}</h3>
+                        <p class="text-gray-600">Klik untuk mulai ujian</p>
+                        <div class="mt-4 px-4 py-2 bg-indigo-100 text-indigo-800 rounded-lg text-sm">
+                            ${currentUser.level} - Tersedia
+                        </div>
+                    </div>
+                `;
+                
+                subjectList.appendChild(subjectCard);
+            });
+            
+            document.getElementById('dateSection').classList.add('hidden');
+            document.getElementById('subjectSection').classList.remove('hidden');
+        }
+
+        function selectSubject(subject) {
+            selectedSubject = subject;
+            
+            document.getElementById('examTitle').textContent = `Ujian ${subject}`;
+            document.getElementById('examInfo').textContent = `${currentUser.level} - ${selectedDay}, ${selectedDate} - Kelas ${currentUser.class}`;
+            
+            document.getElementById('subjectSection').classList.add('hidden');
+            document.getElementById('examSection').classList.remove('hidden');
+        }
+
+        function openExam() {
+            const examUrl = examData[currentUser.level][selectedDate][selectedSubject];
+            
+            // Buka Google Form di tab baru
+            window.open(examUrl, '_blank', 'noopener,noreferrer');
+            
+            // Tampilkan pesan konfirmasi
+            alert('Google Form ujian telah dibuka di tab baru. Setelah selesai mengerjakan, silakan kembali ke portal ini untuk logout.');
+        }
+
+        function backToLogin() {
+            document.getElementById('dateSection').classList.add('hidden');
+            document.getElementById('loginSection').classList.remove('hidden');
+            document.getElementById('userInfo').classList.add('hidden');
+            currentUser = null;
+            
+            // Reset form
+            document.getElementById('studentName').value = '';
+            document.getElementById('studentLevel').value = '';
+            document.getElementById('studentClass').innerHTML = '<option value="">Pilih jenjang terlebih dahulu</option>';
+        }
+
+        function backToDate() {
+            document.getElementById('subjectSection').classList.add('hidden');
+            document.getElementById('dateSection').classList.remove('hidden');
+        }
+
+        function backToSubjects() {
+            document.getElementById('examSection').classList.add('hidden');
+            document.getElementById('subjectSection').classList.remove('hidden');
+        }
+
+        function logout() {
+            if (confirm('Apakah Anda yakin ingin logout?')) {
+                // Reset semua data
+                currentUser = null;
+                selectedDate = null;
+                selectedDay = null;
+                selectedSubject = null;
+                
+                // Reset form
+                document.getElementById('studentName').value = '';
+                document.getElementById('studentLevel').value = '';
+                document.getElementById('studentClass').innerHTML = '<option value="">Pilih jenjang terlebih dahulu</option>';
+                
+                // Kembali ke halaman login
+                document.getElementById('dateSection').classList.add('hidden');
+                document.getElementById('subjectSection').classList.add('hidden');
+                document.getElementById('examSection').classList.add('hidden');
+                document.getElementById('loginSection').classList.remove('hidden');
+                document.getElementById('userInfo').classList.add('hidden');
+                
+                alert('Anda telah berhasil logout. Terima kasih!');
+            }
+        }
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9888cf6dd6a0cb36',t:'MTc1OTQ1NjQ1My4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
